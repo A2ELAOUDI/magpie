@@ -17,7 +17,7 @@ when_to_use: >-
 capability: capability:platform
 surface_hash: sha256:602903c74d17c7fb
 license: Apache-2.0
-measured_tokens: 6640
+measured_tokens: 6642
 ---
 
 <!-- Placeholder convention (see AGENTS.md#placeholder-convention-used-in-skill-files):
@@ -498,7 +498,7 @@ It writes the `isolated_setup` block of the personal layer's
 `reconciled.json` (`<git-common-dir>/apache-magpie/` when the project has
 not adopted Magpie, `.apache-magpie-local/` when it has) and nothing
 else. Skip it when the command cannot find `setup_preflight` — say that
-`/magpie-setup config` installs the checker, and that the reminders start
+`/magpie-setup:setup config` installs the checker, and that the reminders start
 once it is there.
 
 **Always propose shared-config sync once the install lands.**

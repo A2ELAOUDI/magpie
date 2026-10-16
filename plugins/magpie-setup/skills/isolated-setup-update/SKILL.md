@@ -18,7 +18,7 @@ when_to_use: >-
 capability: capability:platform
 surface_hash: sha256:1f327e069312dad2
 license: Apache-2.0
-measured_tokens: 5981
+measured_tokens: 5983
 ---
 
 <!-- Placeholder convention (see AGENTS.md#placeholder-convention-used-in-skill-files):
@@ -262,7 +262,7 @@ PYTHONPATH=".apache-magpie-local:$(git rev-parse --git-common-dir)/../.apache-ma
 
 This writes the current fingerprint and today's date into the `isolated_setup` block of the personal layer's `reconciled.json`, which resets both pre-flight reasons.
 Do not write the block by hand.
-Skip it when the command cannot find `setup_preflight`, and say that `/magpie-setup config` installs the checker.
+Skip it when the command cannot find `setup_preflight`, and say that `/magpie-setup:setup config` installs the checker.
 
 ## After the report
 
